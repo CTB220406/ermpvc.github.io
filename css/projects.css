@@ -63,5 +63,5 @@
 
 .decoration:hover {
     cursor: pointer;
-    text-shadow: 0 0 3px #7473b1;
+    color: #2bce4c !important;
 }
