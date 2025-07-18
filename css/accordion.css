@@ -1,0 +1,22 @@
+
+.accordion-body {
+    text-align: justify;
+    font-family: 'Inter', sans-serif;
+}
+
+.accordion-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: rgb(34, 24, 92);
+}
+
+.Infotext{
+    margin: 1rem auto;
+    padding: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    text-align: center;                /* 👈 centra el texto horizontalmente */
+    line-height: 1.6;
+    white-space: normal;              /* 👈 permite saltos de línea suaves */
+    word-break: break-word;           /* 👈 evita desbordamientos por palabras largas */
+}
