@@ -1,0 +1,67 @@
+.proyecto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    gap: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .proyecto.izquierda {
+    justify-content: flex-start;
+  }
+
+  .proyecto.derecha {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+
+  .proyecto.izquierda,
+  .proyecto.derecha {
+    justify-content: center;
+  }
+
+  .proyecto.derecha {
+    flex-direction: column;
+  }
+
+
+  .text-muted {
+    text-align: justify;
+  }
+
+  .ratio-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .ratio-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @media (max-aspect-ratio: 4/3) {
+    .ratio-container {
+      aspect-ratio: 4 / 3;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+/* 💻 Si la relación de aspecto es más ancha que alta (PCs) */
+@media (min-aspect-ratio: 4/3) {
+  .ratio-container {
+    aspect-ratio: 2.27 / 1;
+   
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.decoration:hover {
+    cursor: pointer;
+    text-shadow: 0 0 3px #7473b1;
+}

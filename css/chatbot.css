@@ -1,0 +1,139 @@
+
+#AccordionChat{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+
+.CuadroPantalla {
+    display: flex;
+    position: relative;
+
+    min-width: 90vw;
+    min-height: 75vh;
+
+    max-width: 90vw;
+    max-height: 75vh;
+}
+
+#WPPChatContainer {
+    position: relative;
+    display: block;
+
+    min-width: 100%;
+    min-height: 100%;
+    
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#WPPChatBox{
+    min-width: 100%;
+    min-height: 100%;
+    
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#ChatBoxArea {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.chat-box {
+    border-top-right-radius: 1rem;
+
+    position: relative;
+    overflow-y: auto;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    scrollbar-width: none; /* Oculta la barra en Firefox */
+    -ms-overflow-style: none; /* Oculta la barra en IE y Edge */
+}
+
+.chat-box::-webkit-scrollbar {
+    display: none; /* Oculta la barra en Chrome, Safari y Opera */
+}
+
+.message-left, .message-right {
+    overflow-wrap: break-word; /* Alternativa para navegadores modernos */
+
+    position: relative;
+    padding: .3rem;
+    border-radius: 1rem;
+    margin: 0.3rem 0;
+    max-width: 70%;
+}
+
+.message-left {
+    align-self: flex-start;
+    background-color: #d4edda;
+    align-self: flex-start;
+}
+
+.message-right {
+    align-self: flex-end;
+    background-color: #cce5ff;
+    align-self: flex-end;
+    text-align: right;
+}
+
+
+#ChatSendMessage{
+    border-bottom-right-radius: 1rem;
+    position: relative;
+
+    flex-grow: 1;
+    max-height: 4.5rem;
+    min-height: 4.5rem;
+}
+
+#messageInput{
+    background: rgb(251, 251, 251);
+
+    z-index: 15;
+    position: relative;
+    width: 100%;
+    resize: none;
+    overflow-y: auto;
+}
+
+#selectButton{
+    margin-right: .5rem;
+    min-height: 100%;
+    max-height: 100%;
+    background-color:antiquewhite;
+    position: relative;
+    border-color: rgba(46, 46, 47, 0.768);
+    overflow: hidden; /* Oculta el contenido si no cabe */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+#sendButton{
+    min-height: 100%;
+    max-height: 100%;
+    background-color:antiquewhite;
+    color: rgba(46, 46, 47, 0.768);
+    border-color: rgba(46, 46, 47, 0.768);
+    position: relative;
+    overflow: hidden; /* Oculta el contenido si no cabe */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+
+
