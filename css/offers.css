@@ -46,7 +46,7 @@
 }
 
 .list-group-itemtest::before {
-    content: "⮞";
+    content: content: "\2B9E";
     margin-right: 0.5rem !important;
     color: rgb(34, 24, 92) !important;
     font-weight: bold !important;
